@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator - Math Magician</title>
+
+    
+    <link rel="stylesheet" href="calcu.css">
+</head>
+
+<body>
+
+   
+    <header>
+        <div class="logo">
+            Math Magician
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quote.html">Quote</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   
+    <main>
+
+        <section class="welcome">
+            <h1 style="color: rgb(14, 141, 141);">Lets Do Some Math...</h1>
+        </section>
+
+
+        
+        <section class="calculator">
+
+            
+            <div class="display">
+                <input type="text" id="display" readonly>
+            </div>
+
+           
+            <div class="buttons">
+
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="changeSign()">+/-</button>
+                <button onclick="percentage()">%</button>
+                <button class="operator" onclick="pressOperator('/')">÷</button>
+
+                <button onclick="pressNumber('7')">7</button>
+                <button onclick="pressNumber('8')">8</button>
+                <button onclick="pressNumber('9')">9</button>
+                <button class="operator" onclick="pressOperator('*')">×</button>
+
+                <button onclick="pressNumber('4')">4</button>
+                <button onclick="pressNumber('5')">5</button>
+                <button onclick="pressNumber('6')">6</button>
+                <button class="operator" onclick="pressOperator('-')">−</button>
+
+                <button onclick="pressNumber('1')">1</button>
+                <button onclick="pressNumber('2')">2</button>
+                <button onclick="pressNumber('3')">3</button>
+                <button class="operator" onclick="pressOperator('+')">+</button>
+
+                <button class="zero" onclick="pressNumber('0')">0</button>
+                <button onclick="pressNumber('.')">.</button>
+                <button class="operator" onclick="calculate()">=</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <script src="calcu.js"></script>
+
+</body>
+</html>
